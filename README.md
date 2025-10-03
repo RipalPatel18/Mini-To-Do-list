@@ -18,7 +18,7 @@ Users can **add tasks, delete tasks, and enjoy smooth animations** for a modern 
 
 ## **Demo Screenshot**
 
-![Todo List Screenshot]() <!-- optional, you can add a screenshot -->
+![Todo List Screenshot](Preview.jpg) 
 
 ---
 
