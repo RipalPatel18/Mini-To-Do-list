@@ -1,0 +1,105 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #dfd5f13f;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.container {
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+  width: 400px;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  color: #4f2b76;
+}
+
+/* Input section */
+.input-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #4f2b76;
+}
+
+button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  border: none;
+  background-color: #a46be2;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color:  #704caf;
+  transform: scale(1.05);
+}
+
+/* Todo List Items */
+#TaskList {
+  list-style: none;
+  padding: 0;
+}
+
+#TaskList li {
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  /* Animation */
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: fadeIn 0.5s forwards;
+}
+
+#TaskList li button {
+  background-color: #f44336;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+#TaskList li button:hover {
+  background-color: #e53935;
+  transform: scale(1.1);
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  to {
+    opacity: 0;
+    transform: translateX(100%);
+    height: 0;
+    margin-bottom: 0;
+    padding: 0;
+  }
+}
